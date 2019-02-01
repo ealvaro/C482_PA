@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="16.0" layoutY="14.0" style="-fx-label-padding: 0;" text="Add Part">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="inHouseRadio" layoutX="188.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#selectInHouse" text="In House">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="addPartToggleGroup" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="outSourcedRadio" layoutX="275.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#selectOutSourced" text="Out Sourced" toggleGroup="$addPartToggleGroup">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <TextField fx:id="id" editable="false" layoutX="188.0" layoutY="115.0" onMouseEntered="#idDisabled" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: cdcdcd;" />
+        <TextField fx:id="name" layoutX="188.0" layoutY="165.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="150.0" />
+        <TextField fx:id="count" layoutX="188.0" layoutY="215.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="150.0" />
+        <TextField fx:id="price" layoutX="188.0" layoutY="265.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="150.0" />
+        <TextField fx:id="max" layoutX="188.0" layoutY="315.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="75.0" />
+        <TextField fx:id="company" layoutX="188.0" layoutY="365.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="150.0" />
+        <TextField fx:id="min" layoutX="369.0" layoutY="315.0" onMouseClicked="#clearTextField" prefHeight="40.0" prefWidth="75.0" />
+        <Label layoutX="311.0" layoutY="326.0" text="Min">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="126.0" text="ID">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="176.0" text="Name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="226.0" text="Inv">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="276.0" text="Price">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="327.0" text="Max">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="companyLabel" layoutX="63.0" layoutY="376.0" text="Company Name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="cancelAddPartButton" layoutX="394.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#cancelAddPart" prefHeight="36.0" prefWidth="67.0" text="Cancel" />
+        <Button fx:id="saveButton" layoutX="183.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#saveAddPart" prefHeight="40.0" prefWidth="110.0" text="Save">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
