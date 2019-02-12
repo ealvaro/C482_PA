@@ -129,7 +129,7 @@ public class AddPartController implements Initializable {
     @FXML
     private void selectInHouse(MouseEvent event) {
         companyLabel.setText("Machine ID");
-        company.setText("Machine Name");
+        company.setText("Machine ID");
     }
 
     @FXML
