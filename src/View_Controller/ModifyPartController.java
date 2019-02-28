@@ -165,29 +165,29 @@ public class ModifyPartController implements Initializable {
                 }
             }
             if (name.getText().trim().isEmpty() || name.getText().trim().toLowerCase().equals("part name")) {
-                errorWindow(4, name);
+                AlertMessage.errorPart(4, name);
                 return;
             }
             if (Integer.parseInt(min.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-                errorWindow(8, min);
+                AlertMessage.errorPart(8, min);
                 return;
             }
             if (Integer.parseInt(count.getText().trim()) < Integer.parseInt(min.getText().trim())) {
-                errorWindow(6, count);
+                AlertMessage.errorPart(6, count);
                 return;
             }
             if (Integer.parseInt(count.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-                errorWindow(7, count);
+                AlertMessage.errorPart(7, count);
                 return;
             }
 
             if (end) {
                 return;
             } else if (outSourcedRadio.isSelected() && company.getText().trim().isEmpty()) {
-                errorWindow(1, company);
+                AlertMessage.errorPart(1, company);
                 return;
             } else if (inHouseRadio.isSelected() && !company.getText().matches("[0-9]*")) {
-                errorWindow(1, company);
+                AlertMessage.errorPart(1, company);
                 return;
 
             } else if (inHouseRadio.isSelected() & part instanceof InHouse) {
@@ -202,7 +202,7 @@ public class ModifyPartController implements Initializable {
             }
 
         } else {
-            errorWindow(2, null);
+            AlertMessage.errorPart(2, null);
             return;
 
         }
@@ -221,66 +221,6 @@ public class ModifyPartController implements Initializable {
                 Integer.parseInt(min.getText().trim()), Integer.parseInt(max.getText().trim()), company.getText().trim()));
     }
 
-    private void errorWindow(int code, TextField field) {
-        fieldError(field);
-
-        if (code == 1) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Field is empty!");
-            alert.showAndWait();
-        } else if (code == 2) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Ooops, you forgot to select In House/OutSourced!");
-            alert.showAndWait();
-        } else if (code == 3) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Invalid format!");
-            alert.showAndWait();
-        } else if (code == 4) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Name is invalid!");
-            alert.showAndWait();
-        } else if (code == 5) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Value cannot be negative!!");
-            alert.showAndWait();
-        } else if (code == 6) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be lower than min!");
-            alert.showAndWait();
-        } else if (code == 7) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be greater than max!");
-            alert.showAndWait();
-        } else if (code == 8) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Min cannot be higher than max!");
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Unknown error!");
-            alert.showAndWait();
-        }
-    }
-
     private void resetFieldsStyle() {
         name.setStyle("-fx-border-color: lightgray");
         count.setStyle("-fx-border-color: lightgray");
@@ -289,14 +229,6 @@ public class ModifyPartController implements Initializable {
         max.setStyle("-fx-border-color: lightgray");
         company.setStyle("-fx-border-color: lightgray");
 
-    }
-
-    private void fieldError(TextField field) {
-        if (field == null) {
-            // do nothing
-        } else {
-            field.setStyle("-fx-border-color: red");
-        }
     }
 
     private void mainScreen(Event event) {
@@ -320,16 +252,16 @@ public class ModifyPartController implements Initializable {
         boolean error = false;
         try {
             if (field.getText().trim().isEmpty() || field.getText().trim() == null) {
-                errorWindow(1, field);
+                AlertMessage.errorPart(1, field);
                 return true;
             }
             if (field == price && Double.parseDouble(field.getText().trim()) < 0) {
-                errorWindow(5, field);
+                AlertMessage.errorPart(5, field);
                 error = true;
             }
         } catch (Exception e) {
             error = true;
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             System.out.println(e);
 
         }
@@ -339,11 +271,11 @@ public class ModifyPartController implements Initializable {
     private boolean checkType(TextField field) {
 
         if (field == price & !field.getText().trim().matches("\\d+(\\.\\d+)?")) {
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             return true;
         }
         if (field != price & !field.getText().trim().matches("[0-9]*")) {
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             return true;
         }
         return false;

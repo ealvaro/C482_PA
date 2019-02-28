@@ -11,7 +11,6 @@ import Model.OutSourced;
 import Model.Part;
 import java.io.IOException;
 import java.net.URL;
-import java.util.Optional;
 import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.Event;
@@ -21,9 +20,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
@@ -97,7 +93,7 @@ public class AddPartController implements Initializable {
 
         }
         if (inv.partListSize() == 1000) {
-            errorWindow(3, null);
+            AlertMessage.errorPart(3, null);
         } else {
             match = generateNum(num);
 
@@ -111,12 +107,7 @@ public class AddPartController implements Initializable {
 
     private boolean generateNum(Integer num) {
         Part match = inv.lookUpPart(num);
-        if (match != null) {
-            return true;
-
-        }
-
-        return false;
+        return match != null;
     }
 
     @FXML
@@ -144,11 +135,9 @@ public class AddPartController implements Initializable {
 
     @FXML
     private void cancelAddPart(MouseEvent event) {
-        boolean cancel = cancel();
+        boolean cancel = AlertMessage.cancel();
         if (cancel) {
             mainScreen(event);
-        } else {
-            return;
         }
     }
 
@@ -158,43 +147,42 @@ public class AddPartController implements Initializable {
         boolean end = false;
         TextField[] fieldCount = {count, price, min, max};
         if (inHouseRadio.isSelected() || outSourcedRadio.isSelected()) {
-            for (int i = 0; i < fieldCount.length; i++) {
-                boolean valueError = checkValue(fieldCount[i]);
+            for (TextField fieldCount1 : fieldCount) {
+                boolean valueError = checkValue(fieldCount1);
                 if (valueError) {
                     end = true;
                     break;
                 }
-                boolean typeError = checkType(fieldCount[i]);
+                boolean typeError = checkType(fieldCount1);
                 if (typeError) {
                     end = true;
                     break;
                 }
             }
             if (name.getText().trim().isEmpty() || name.getText().trim().toLowerCase().equals("part name")) {
-                errorWindow(4, name);
+                AlertMessage.errorPart(4, name);
                 return;
             }
             if (Integer.parseInt(min.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-                errorWindow(8, min);
+                AlertMessage.errorPart(8, min);
                 return;
             }
             if (Integer.parseInt(count.getText().trim()) < Integer.parseInt(min.getText().trim())) {
-                errorWindow(6, count);
+                AlertMessage.errorPart(6, count);
                 return;
             }
             if (Integer.parseInt(count.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-                errorWindow(7, count);
+                AlertMessage.errorPart(7, count);
                 return;
             }
-
             if (end) {
                 return;
             } else if (company.getText().trim().isEmpty() || company.getText().trim().toLowerCase().equals("company name")) {
-                errorWindow(3, company);
+                AlertMessage.errorPart(3, company);
                 return;
 
             } else if (inHouseRadio.isSelected() && !company.getText().trim().matches("[0-9]*")) {
-                errorWindow(3, company);
+                AlertMessage.errorPart(3, company);
                 return;
             } else if (inHouseRadio.isSelected()) {
                 addInHouse();
@@ -205,7 +193,7 @@ public class AddPartController implements Initializable {
             }
 
         } else {
-            errorWindow(2, null);
+            AlertMessage.errorPart(2, null);
             return;
 
         }
@@ -213,7 +201,6 @@ public class AddPartController implements Initializable {
     }
 
     private void addInHouse() {
-
         inv.addPart(new InHouse(Integer.parseInt(id.getText().trim()), name.getText().trim(),
                 Double.parseDouble(price.getText().trim()), Integer.parseInt(count.getText().trim()),
                 Integer.parseInt(min.getText().trim()), Integer.parseInt(max.getText().trim()), (Integer.parseInt(company.getText().trim()))));
@@ -227,66 +214,6 @@ public class AddPartController implements Initializable {
 
     }
 
-    private void errorWindow(int code, TextField field) {
-        fieldError(field);
-
-        if (code == 1) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Field is empty!");
-            alert.showAndWait();
-        } else if (code == 2) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Ooops, you forgot to select In House/OutSourced!");
-            alert.showAndWait();
-        } else if (code == 3) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Invalid format!");
-            alert.showAndWait();
-        } else if (code == 4) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Name is invalid!");
-            alert.showAndWait();
-        } else if (code == 5) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Value cannot be negative!");
-            alert.showAndWait();
-        } else if (code == 6) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be lower than min!");
-            alert.showAndWait();
-        } else if (code == 7) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be greater than max!");
-            alert.showAndWait();
-        } else if (code == 8) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Min cannot be greater than max!");
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Unknown error!");
-            alert.showAndWait();
-        }
-    }
-
     private void resetFieldsStyle() {
         name.setStyle("-fx-border-color: lightgray");
         count.setStyle("-fx-border-color: lightgray");
@@ -294,15 +221,6 @@ public class AddPartController implements Initializable {
         min.setStyle("-fx-border-color: lightgray");
         max.setStyle("-fx-border-color: lightgray");
         company.setStyle("-fx-border-color: lightgray");
-
-    }
-
-    private void fieldError(TextField field) {
-        if (field == null) {
-            return;
-        } else {
-            field.setStyle("-fx-border-color: red");
-        }
     }
 
     private void mainScreen(Event event) {
@@ -326,16 +244,16 @@ public class AddPartController implements Initializable {
         boolean error = false;
         try {
             if (field.getText().trim().isEmpty() | field.getText().trim() == null) {
-                errorWindow(1, field);
+                AlertMessage.errorPart(1, field);
                 return true;
             }
             if (field == price && Double.parseDouble(field.getText().trim()) < 0) {
-                errorWindow(5, field);
+                AlertMessage.errorPart(5, field);
                 error = true;
             }
         } catch (Exception e) {
             error = true;
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             System.out.println(e);
 
         }
@@ -345,29 +263,14 @@ public class AddPartController implements Initializable {
     private boolean checkType(TextField field) {
 
         if (field == price & !field.getText().trim().matches("\\d+(\\.\\d+)?")) {
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             return true;
         }
         if (field != price & !field.getText().trim().matches("[0-9]*")) {
-            errorWindow(3, field);
+            AlertMessage.errorPart(3, field);
             return true;
         }
         return false;
-
-    }
-
-    private boolean cancel() {
-        Alert alert = new Alert(AlertType.CONFIRMATION);
-        alert.setTitle("Cancel");
-        alert.setHeaderText("Are you sure you want to cancel?");
-        alert.setContentText("Click ok to confirm");
-
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.get() == ButtonType.OK) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
 }

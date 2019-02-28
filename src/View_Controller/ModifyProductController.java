@@ -122,9 +122,9 @@ public class ModifyProductController implements Initializable {
             return;
         }
         if (deleted) {
-            infoWindow(1, removePart.getName());
+            AlertMessage.infoWindow(1, removePart.getName());
         } else {
-            infoWindow(2, "");
+            AlertMessage.infoWindow(2, "");
         }
 
     }
@@ -140,7 +140,7 @@ public class ModifyProductController implements Initializable {
             int id = addPart.getPartID();
             for (int i = 0; i < assocPartList.size(); i++) {
                 if (assocPartList.get(i).getPartID() == id) {
-                    errorWindow(2, null);
+                    AlertMessage.errorProduct(2, null);
                     repeatedItem = true;
                 }
             }
@@ -154,7 +154,7 @@ public class ModifyProductController implements Initializable {
 
     @FXML
     private void cancelModify(MouseEvent event) {
-        boolean cancel = cancel();
+        boolean cancel = AlertMessage.cancel();
         if (cancel) {
             mainScreen(event);
         } else {
@@ -172,7 +172,7 @@ public class ModifyProductController implements Initializable {
             minCost += assocPartList.get(i).getPrice();
         }
         if (name.getText().trim().isEmpty() || name.getText().trim().toLowerCase().equals("part name")) {
-            errorWindow(4, name);
+            AlertMessage.errorProduct(4, name);
             return;
         }
         for (int i = 0; i < fieldCount.length; i++) {
@@ -188,23 +188,23 @@ public class ModifyProductController implements Initializable {
             }
         }
         if (Integer.parseInt(min.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-            errorWindow(10, min);
+            AlertMessage.errorProduct(10, min);
             return;
         }
         if (Integer.parseInt(count.getText().trim()) < Integer.parseInt(min.getText().trim())) {
-            errorWindow(8, count);
+            AlertMessage.errorProduct(8, count);
             return;
         }
         if (Integer.parseInt(count.getText().trim()) > Integer.parseInt(max.getText().trim())) {
-            errorWindow(9, count);
+            AlertMessage.errorProduct(9, count);
             return;
         }
         if (Double.parseDouble(price.getText().trim()) < minCost) {
-            errorWindow(6, price);
+            AlertMessage.errorProduct(6, price);
             return;
         }
         if (assocPartList.size() == 0) {
-            errorWindow(7, null);
+            AlertMessage.errorProduct(7, null);
             return;
         }
 
@@ -255,86 +255,6 @@ public class ModifyProductController implements Initializable {
         partSearchTable.setItems(partsInventory);
     }
 
-    private void errorWindow(int code, TextField field) {
-        fieldError(field);
-
-        if (code == 1) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Field is empty!");
-            alert.showAndWait();
-        } else if (code == 2) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Part is already is associated with this product!");
-            alert.showAndWait();
-        } else if (code == 3) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Invalid format!");
-            alert.showAndWait();
-        } else if (code == 4) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Name is invalid!");
-            alert.showAndWait();
-        } else if (code == 5) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Value cannot be negative!");
-            alert.showAndWait();
-        } else if (code == 6) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Product cost cannot be lower than it's parts!");
-            alert.showAndWait();
-        } else if (code == 7) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Product must have at least one part!");
-            alert.showAndWait();
-        } else if (code == 8) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be lower than min!");
-            alert.showAndWait();
-        } else if (code == 9) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Inventory cannot be greater than max!");
-            alert.showAndWait();
-        } else if (code == 10) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Error adding part");
-            alert.setHeaderText("Cannot add part");
-            alert.setContentText("Min cannot be greater than max!");
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding product");
-            alert.setHeaderText("Cannot add product");
-            alert.setContentText("Unknown error!");
-            alert.showAndWait();
-        }
-    }
-
-    private void fieldError(TextField field) {
-        if (field == null) {
-            return;
-        } else {
-            field.setStyle("-fx-border-color: red");
-        }
-    }
-
     private void resetFieldsStyle() {
         name.setStyle("-fx-border-color: lightgray");
         count.setStyle("-fx-border-color: lightgray");
@@ -355,22 +275,6 @@ public class ModifyProductController implements Initializable {
             return true;
         } else {
             return false;
-        }
-    }
-
-    private void infoWindow(int code, String name) {
-        if (code != 2) {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Confirmed");
-            alert.setHeaderText(null);
-            alert.setContentText(name + " has been deleted!");
-
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText("There was an error!");
         }
     }
 
@@ -395,16 +299,16 @@ public class ModifyProductController implements Initializable {
         boolean error = false;
         try {
             if (field.getText().trim().isEmpty() || field.getText().trim() == null) {
-                errorWindow(1, field);
+                AlertMessage.errorProduct(1, field);
                 return true;
             }
             if (field == price && Double.parseDouble(field.getText().trim()) < 0) {
-                errorWindow(5, field);
+                AlertMessage.errorProduct(5, field);
                 error = true;
             }
         } catch (Exception e) {
             error = true;
-            errorWindow(3, field);
+            AlertMessage.errorProduct(3, field);
             System.out.println(e);
 
         }
@@ -414,28 +318,15 @@ public class ModifyProductController implements Initializable {
     private boolean checkType(TextField field) {
 
         if (field == price & !field.getText().trim().matches("\\d+(\\.\\d+)?")) {
-            errorWindow(3, field);
+            AlertMessage.errorProduct(3, field);
             return true;
         }
         if (field != price & !field.getText().trim().matches("[0-9]*")) {
-            errorWindow(3, field);
+            AlertMessage.errorProduct(3, field);
             return true;
         }
         return false;
 
     }
 
-    private boolean cancel() {
-        Alert alert = new Alert(AlertType.CONFIRMATION);
-        alert.setTitle("Cancel");
-        alert.setHeaderText("Are you sure you want to cancel?");
-        alert.setContentText("Click ok to confirm");
-
-        Optional<ButtonType> result = alert.showAndWait();
-        if (result.get() == ButtonType.OK) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }
