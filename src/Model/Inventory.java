@@ -104,10 +104,6 @@ public class Inventory {
 		return;
 	}
 
-	public int productListSize() {
-		return products.size();
-	}
-
 	public int partListSize() {
 		return allParts.size();
 	}
