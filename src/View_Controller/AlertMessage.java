@@ -23,55 +23,50 @@ public class AlertMessage {
         alert.setTitle("Error adding part");
         alert.setHeaderText("Cannot add part");
         switch (code) {
-            case 1:
-                {
-                    alert.setContentText("Field is empty!");
-                    break;
-                }
-            case 2:
-                {
-                    alert.setContentText("Ooops, you forgot to select In House/OutSourced!");
-                    break;
-                }
-            case 3:
-                {
-                    alert.setContentText("Invalid format!");
-                    break;
-                }
-            case 4:
-                {
-                    alert.setContentText("Name is invalid!");
-                    break;
-                }
-            case 5:
-                {
-                    alert.setContentText("Value cannot be negative!!");
-                    break;
-                }
-            case 6:
-                {
-                    alert.setContentText("Inventory cannot be lower than min!");
-                    break;
-                }
-            case 7:
-                {
-                    alert.setContentText("Inventory cannot be greater than max!");
-                    break;
-                }
-            case 8:
-                {
-                    alert.setContentText("Min cannot be higher than max!");
-                    break;
-                }
-            default:
-                {
-                    alert.setContentText("Unknown error!");
-                    break;
-                }
+            case 1: {
+                alert.setContentText("Field is empty!");
+                break;
+            }
+            case 2: {
+                alert.setContentText("Ooops, you forgot to select In House/OutSourced!");
+                break;
+            }
+            case 3: {
+                alert.setContentText("Invalid format!");
+                break;
+            }
+            case 4: {
+                alert.setContentText("Name is invalid!");
+                break;
+            }
+            case 5: {
+                alert.setContentText("Value cannot be negative!!");
+                break;
+            }
+            case 6: {
+                alert.setContentText("Inventory cannot be lower than min!");
+                break;
+            }
+            case 7: {
+                alert.setContentText("Inventory cannot be greater than max!");
+                break;
+            }
+            case 8: {
+                alert.setContentText("Min cannot be higher than max!");
+                break;
+            }
+            case 9: {
+                alert.setContentText("Machine ID must be a number");
+                break;
+            }
+            default: {
+                alert.setContentText("Unknown error!");
+                break;
+            }
         }
         alert.showAndWait();
     }
-    
+
     public static void errorProduct(int code, TextField field) {
         fieldError(field);
 
@@ -79,61 +74,50 @@ public class AlertMessage {
         alert.setTitle("Error adding product");
         alert.setHeaderText("Cannot add product");
         switch (code) {
-            case 1:
-                {
-                    alert.setContentText("Field is empty!");
-                    break;
-                }
-            case 2:
-                {
-                    alert.setContentText("Part is already is associated with this product!");
-                    break;
-                }
-            case 3:
-                {
-                    alert.setContentText("Invalid format!");
-                    break;
-                }
-            case 4:
-                {
-                    alert.setContentText("Name is invalid!");
-                    break;
-                }
-            case 5:
-                {
-                    alert.setContentText("Value cannot be negative!");
-                    break;
-                }
-            case 6:
-                {
-                    alert.setContentText("Product cost cannot be lower than it's parts!");
-                    break;
-                }
-            case 7:
-                {
-                    alert.setContentText("Product must have at least one part!");
-                    break;
-                }
-            case 8:
-                {
-                    alert.setContentText("Inventory cannot be lower than min!");
-                    break;
-                }
-            case 9:
-                {
-                    alert.setContentText("Inventory cannot be greater than max!");
-                    break;
-                }
-            case 10:
-                {
-                    alert.setContentText("Min cannot be greater than max!");
-                    break;
-                }
-            default:
-                {
-                    alert.setContentText("Unknown error!");
-                    break;
-                }
+            case 1: {
+                alert.setContentText("Field is empty!");
+                break;
+            }
+            case 2: {
+                alert.setContentText("Part is already is associated with this product!");
+                break;
+            }
+            case 3: {
+                alert.setContentText("Invalid format!");
+                break;
+            }
+            case 4: {
+                alert.setContentText("Name is invalid!");
+                break;
+            }
+            case 5: {
+                alert.setContentText("Value cannot be negative!");
+                break;
+            }
+            case 6: {
+                alert.setContentText("Product cost cannot be lower than it's parts!");
+                break;
+            }
+            case 7: {
+                alert.setContentText("Product must have at least one part!");
+                break;
+            }
+            case 8: {
+                alert.setContentText("Inventory cannot be lower than min!");
+                break;
+            }
+            case 9: {
+                alert.setContentText("Inventory cannot be greater than max!");
+                break;
+            }
+            case 10: {
+                alert.setContentText("Min cannot be greater than max!");
+                break;
+            }
+            default: {
+                alert.setContentText("Unknown error!");
+                break;
+            }
         }
         alert.showAndWait();
     }
@@ -142,7 +126,7 @@ public class AlertMessage {
         if (field != null) {
             field.setStyle("-fx-border-color: red");
         }
-    }   
+    }
 
     public static boolean confirmationWindow(String name) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

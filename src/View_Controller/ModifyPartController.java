@@ -187,7 +187,7 @@ public class ModifyPartController implements Initializable {
                 AlertMessage.errorPart(1, company);
                 return;
             } else if (inHouseRadio.isSelected() && !company.getText().matches("[0-9]*")) {
-                AlertMessage.errorPart(1, company);
+                AlertMessage.errorPart(9, company);
                 return;
 
             } else if (inHouseRadio.isSelected() & part instanceof InHouse) {
