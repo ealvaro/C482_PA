@@ -8,11 +8,6 @@ package View_Controller;
 import Model.Inventory;
 import Model.Part;
 import Model.Product;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Optional;
-import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -31,6 +26,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.ResourceBundle;
+
 /**
  * FXML Controller class
  *
@@ -48,18 +49,13 @@ public class MainScreenController implements Initializable {
     private TableView<Part> partsTable;
     @FXML
     private TableView<Product> productsTable;
-
     private ObservableList<Part> partInventory = FXCollections.observableArrayList();
     private ObservableList<Product> productInventory = FXCollections.observableArrayList();
     private ObservableList<Part> partsInventorySearch = FXCollections.observableArrayList();
     private ObservableList<Product> productInventorySearch = FXCollections.observableArrayList();
-    ArrayList<Integer> partIDList;
-    ArrayList<Integer> productIDList;
 
     public MainScreenController(Inventory inv) {
         this.inv = inv;
-        partIDList = inv.retrievePartsIDList();
-        productIDList = inv.retrieveProductIDList();
     }
 
     /**
@@ -72,23 +68,13 @@ public class MainScreenController implements Initializable {
     }
 
     private void generatePartsTable() {
-        if (!partIDList.isEmpty()) {
-            for (int i = 0; i < partIDList.size(); i++) {
-                partInventory.add(inv.lookUpPart(partIDList.get(i)));
-            }
-        }
-
+        partInventory.setAll(inv.getAllParts());
         partsTable.setItems(partInventory);
         partsTable.refresh();
     }
 
     private void generateProductsTable() {
-        if (!productIDList.isEmpty()) {
-            for (int i = 0; i < productIDList.size(); i++) {
-                productInventory.add(inv.lookUpProduct(productIDList.get(i)));
-            }
-        }
-        System.out.println(productIDList.size());
+        productInventory.setAll(inv.getAllProducts());
         productsTable.setItems(productInventory);
         productsTable.refresh();
     }
@@ -109,9 +95,9 @@ public class MainScreenController implements Initializable {
     private void searchForPart(MouseEvent event) {
         if (!partSearchBox.getText().trim().isEmpty()) {
             partsInventorySearch.clear();
-            for (int i = 0; i < partIDList.size(); i++) {
-                if (inv.lookUpPart(partIDList.get(i)).getName().contains(partSearchBox.getText().trim())) {
-                    partsInventorySearch.add(inv.lookUpPart(partIDList.get(i)));
+            for (Part p : inv.getAllParts()) {
+                if (p.getName().contains(partSearchBox.getText().trim())) {
+                    partsInventorySearch.add(p);
                 }
             }
             partsTable.setItems(partsInventorySearch);
@@ -124,9 +110,9 @@ public class MainScreenController implements Initializable {
     ) {
         if (!productSearchBox.getText().trim().isEmpty()) {
             productInventorySearch.clear();
-            for (int i = 0; i < productIDList.size(); i++) {
-                if (inv.lookUpProduct(productIDList.get(i)).getName().contains(productSearchBox.getText().trim())) {
-                    productInventorySearch.add(inv.lookUpProduct(productIDList.get(i)));
+            for (Product p : inv.getAllProducts()) {
+                if (p.getName().contains(productSearchBox.getText().trim())) {
+                    productInventorySearch.add(p);
                 }
             }
             productsTable.setItems(productInventorySearch);

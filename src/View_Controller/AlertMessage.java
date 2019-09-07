@@ -5,13 +5,13 @@
  */
 package View_Controller;
 
-import java.util.Optional;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 
+import java.util.Optional;
+
 /**
- *
  * @author Alvaro Escobar
  */
 public class AlertMessage {

@@ -8,11 +8,6 @@ package View_Controller;
 import Model.Inventory;
 import Model.Part;
 import Model.Product;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
@@ -26,6 +21,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -54,15 +55,12 @@ public class AddProductController implements Initializable {
     private TableView<Part> partSearchTable;
     @FXML
     private TableView<Part> assocPartsTable;
-
     private ObservableList<Part> partsInventory = FXCollections.observableArrayList();
     private ObservableList<Part> partsInventorySearch = FXCollections.observableArrayList();
     private ObservableList<Part> assocPartList = FXCollections.observableArrayList();
-    ArrayList<Integer> partIDList;
 
     public AddProductController(Inventory inv) {
         this.inv = inv;
-        partIDList = inv.retrievePartsIDList();
     }
 
     /**
@@ -72,6 +70,43 @@ public class AddProductController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         generateProductID();
         populateSearchTable();
+    }
+
+    private void generateProductID() {
+        boolean match;
+        Random randomNum = new Random();
+        Integer num = randomNum.nextInt(1000);
+
+
+        if (inv.productListSize() == 0) {
+            id.setText(num.toString());
+
+        }
+        if (inv.productListSize() == 1000) {
+            AlertMessage.errorProduct(3, null);
+        } else {
+            match = generateNum(num);
+
+            if (match == false) {
+                id.setText(num.toString());
+            } else {
+                generateProductID();
+            }
+        }
+
+        id.setText(num.toString());
+    }
+
+    private boolean generateNum(Integer num) {
+        Part match = inv.lookUpPart (num);
+        return match != null;
+    }
+
+
+    private void populateSearchTable() {
+        partsInventory.setAll(inv.getAllParts());
+        partSearchTable.setItems(partsInventory);
+        partSearchTable.refresh();
     }
 
     @FXML
@@ -85,9 +120,9 @@ public class AddProductController implements Initializable {
     private void searchForPart(MouseEvent event) {
         if (search.getText() != null && search.getText().trim().length() != 0) {
             partsInventorySearch.clear();
-            for (int i = 0; i < inv.partListSize(); i++) {
-                if (inv.lookUpPart(partIDList.get(i)).getName().contains(search.getText().trim())) {
-                    partsInventorySearch.add(inv.lookUpPart(partIDList.get(i)));
+            for (Part p : inv.getAllParts()) {
+                if (p.getName().contains(search.getText().trim())) {
+                    partsInventorySearch.add(p);
                 }
             }
             partSearchTable.setItems(partsInventorySearch);
@@ -224,25 +259,6 @@ public class AddProductController implements Initializable {
         min.setStyle("-fx-border-color: lightgray");
         max.setStyle("-fx-border-color: lightgray");
 
-    }
-
-    private void generateProductID() {
-        Random randomNum = new Random();
-        Integer num = randomNum.nextInt(1000);
-        id.setText(num.toString());
-
-    }
-
-    private void populateSearchTable() {
-        if (partIDList.isEmpty()) {
-            return;
-        } else {
-            for (int i = 0; i < partIDList.size(); i++) {
-                partsInventory.add(inv.lookUpPart(partIDList.get(i)));
-            }
-        }
-
-        partSearchTable.setItems(partsInventory);
     }
 
     @FXML

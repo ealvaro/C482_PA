@@ -8,11 +8,6 @@ package View_Controller;
 import Model.Inventory;
 import Model.Part;
 import Model.Product;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Optional;
-import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
@@ -29,6 +24,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -52,24 +53,19 @@ public class ModifyProductController implements Initializable {
     private TextField min;
     @FXML
     private TextField max;
-
     @FXML
     private TableView<Part> assocPartsTable;
     @FXML
     private TableView<Part> partSearchTable;
     @FXML
     private TextField search;
-
     private ObservableList<Part> partsInventory = FXCollections.observableArrayList();
     private ObservableList<Part> partsInventorySearch = FXCollections.observableArrayList();
     private ObservableList<Part> assocPartList = FXCollections.observableArrayList();
-    ArrayList<Integer> partIDList;
 
     public ModifyProductController(Inventory inv, Product product) {
         this.inv = inv;
         this.product = product;
-        this.partIDList = inv.retrievePartsIDList();
-
     }
 
     /**
@@ -79,6 +75,12 @@ public class ModifyProductController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         populateSearchTable();
         setData();
+    }
+
+    private void populateSearchTable() {
+        partsInventory.setAll(inv.getAllParts());
+        partSearchTable.setItems(partsInventory);
+        partSearchTable.refresh();
     }
 
     @FXML
@@ -93,18 +95,15 @@ public class ModifyProductController implements Initializable {
 
     @FXML
     private void modifyProductSearch(MouseEvent event) {
-        if (search.getText().trim().length() == 0 | search.getText() == null) {
-            return;
-        } else {
+        if (search.getText() != null && search.getText().trim().length() != 0) {
             partsInventorySearch.clear();
-            for (int i = 0; i < inv.partListSize(); i++) {
-                if (inv.lookUpPart(partIDList.get(i)).getName().contains(search.getText().trim())) {
-                    partsInventorySearch.add(inv.lookUpPart(partIDList.get(i)));
+            for (Part p : inv.getAllParts()) {
+                if (p.getName().contains(search.getText().trim())) {
+                    partsInventorySearch.add(p);
                 }
             }
             partSearchTable.setItems(partsInventorySearch);
         }
-
     }
 
     @FXML
@@ -241,18 +240,6 @@ public class ModifyProductController implements Initializable {
         this.min.setText((Integer.toString(product.getMin())));
         this.max.setText((Integer.toString(product.getMax())));
 
-    }
-
-    private void populateSearchTable() {
-        if (inv.partListSize() == 0) {
-            return;
-        } else {
-            for (int i = 0; i < partIDList.size(); i++) {
-                partsInventory.add(inv.lookUpPart(partIDList.get(i)));
-            }
-        }
-
-        partSearchTable.setItems(partsInventory);
     }
 
     private void resetFieldsStyle() {
