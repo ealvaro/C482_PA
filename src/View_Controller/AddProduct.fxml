@@ -86,11 +86,6 @@
                                 <PropertyValueFactory property="InStock"/>
                             </cellValueFactory>
                         </TableColumn>
-                        <TableColumn fx:id="partPriceColumn" prefWidth="112.0" text="Part Price">
-                            <cellValueFactory>
-                                <PropertyValueFactory property="Price"/>
-                            </cellValueFactory>
-                        </TableColumn>
                     </columns>
                 </TableView>
                 <Button fx:id="addProductAddButton" layoutX="858.0" layoutY="222.0" mnemonicParsing="false"
@@ -122,11 +117,6 @@
                         <TableColumn fx:id="assocPartCountColumn" prefWidth="98.0" text="Inv Count">
                             <cellValueFactory>
                                 <PropertyValueFactory property="InStock"/>
-                            </cellValueFactory>
-                        </TableColumn>
-                        <TableColumn fx:id="assocPartPriceColumn" prefWidth="112.0" text="Part Price">
-                            <cellValueFactory>
-                                <PropertyValueFactory property="Price"/>
                             </cellValueFactory>
                         </TableColumn>
                     </columns>

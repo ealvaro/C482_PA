@@ -31,6 +31,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import javafx.scene.control.TableCell;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
  * FXML Controller class
@@ -69,12 +72,20 @@ public class MainScreenController implements Initializable {
 
     private void generatePartsTable() {
         partInventory.setAll(inv.getAllParts());
+        
+        TableColumn<Part, Double> costCol = formatPrice();
+        partsTable.getColumns().addAll(costCol);
+        
         partsTable.setItems(partInventory);
         partsTable.refresh();
     }
 
     private void generateProductsTable() {
         productInventory.setAll(inv.getAllProducts());
+
+        TableColumn<Product, Double> costCol = formatPrice();
+        productsTable.getColumns().addAll(costCol);
+
         productsTable.setItems(productInventory);
         productsTable.refresh();
     }
@@ -357,6 +368,23 @@ public class MainScreenController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("There was an error!");
         }
+    }
+
+    private <T> TableColumn<T, Double> formatPrice() {
+        TableColumn<T, Double> costCol = new TableColumn("Price");
+        costCol.setCellValueFactory(new PropertyValueFactory<>("Price"));
+        // Format as currency
+        costCol.setCellFactory((TableColumn<T, Double> column) -> {
+            return new TableCell<T, Double>() {
+                @Override
+                protected void updateItem(Double item, boolean empty) {
+                    if (!empty) {
+                        setText("$" + String.format("%10.2f", item));
+                    }
+                }
+            };
+        });
+        return costCol;
     }
 
 }
