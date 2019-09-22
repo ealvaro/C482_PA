@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View_Controller;
+package Controllers;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;

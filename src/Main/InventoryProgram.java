@@ -29,8 +29,8 @@ public class InventoryProgram extends Application {
         Inventory inv = new Inventory();
         addTestData(inv);
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View_Controller/MainScreen.fxml"));
-        View_Controller.MainScreenController controller = new View_Controller.MainScreenController(inv);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/MainScreen.fxml"));
+        Controllers.MainScreenController controller = new Controllers.MainScreenController(inv);
         loader.setController(controller);
         Parent root = loader.load();
         Scene scene = new Scene(root);

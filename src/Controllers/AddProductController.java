@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View_Controller;
+package Controllers;
 
 import Model.Inventory;
 import Model.Part;
@@ -283,7 +283,7 @@ public class AddProductController implements Initializable {
 
     private void mainScreen(Event event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/MainScreen.fxml"));
             MainScreenController controller = new MainScreenController(inv);
 
             loader.setController(controller);
