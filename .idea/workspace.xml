@@ -2,280 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff0d54a-5626-4ad1-8fdc-c8aa55338d16" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/InventoryProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/InventoryProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AddPart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/AddPart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AddPartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AddPartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/AddProduct.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/AlertMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AlertMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/ModifyPart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/ModifyPart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/ModifyPartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ModifyPartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/ModifyProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/ModifyProduct.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View_Controller/ModifyProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ModifyProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/MainScreen.fxml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="C482_PA" />
   </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49036777">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="Part.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Model/Part.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="15" column="29" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#466#467#0" expanded="true" />
-                    <element signature="e#502#503#0" expanded="true" />
-                    <element signature="e#542#543#0" expanded="true" />
-                    <element signature="e#578#579#0" expanded="true" />
-                    <element signature="e#610#611#0" expanded="true" />
-                    <element signature="e#642#643#0" expanded="true" />
-                    <element signature="e#684#685#0" expanded="true" />
-                    <element signature="e#722#723#0" expanded="true" />
-                    <element signature="e#753#754#0" expanded="true" />
-                    <element signature="e#792#793#0" expanded="true" />
-                    <element signature="e#836#837#0" expanded="true" />
-                    <element signature="e#879#880#0" expanded="true" />
-                    <element signature="e#906#907#0" expanded="true" />
-                    <element signature="e#937#938#0" expanded="true" />
-                    <element signature="e#972#973#0" expanded="true" />
-                    <element signature="e#1002#1003#0" expanded="true" />
-                    <element signature="e#1029#1030#0" expanded="true" />
-                    <element signature="e#1060#1061#0" expanded="true" />
-                    <element signature="e#1095#1096#0" expanded="true" />
-                    <element signature="e#1125#1126#0" expanded="true" />
-                    <element signature="e#1155#1156#0" expanded="true" />
-                    <element signature="e#1189#1190#0" expanded="true" />
-                    <element signature="e#1230#1231#0" expanded="true" />
-                    <element signature="e#1266#1267#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InHouse.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Model/InHouse.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Model/Inventory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="305">
-                  <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="47" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#2753#2754#0" expanded="true" />
-                    <element signature="e#2787#2788#0" expanded="true" />
-                    <element signature="e#2831#2832#0" expanded="true" />
-                    <element signature="e#2862#2863#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="OutSourced.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Model/OutSourced.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="InventoryProgram.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="C482_PA.iml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.idea/C482_PA.iml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>http://javafx.com/javafx/8.0.161</find>
-      <find>8.0.161</find>
-      <find>http://javafx.com/javafx/9</find>
-      <find>http://javafx.com/javafx/9.0.0</find>
-      <find>http://javafx.com/javafx/9.0.0.0.0</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>http://javafx.com/javafx/9.0</replace>
-      <replace>http://javafx.com/javafx/9.0.0.0</replace>
-    </replaceStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Views/AddPart.fxml" />
-        <option value="$PROJECT_DIR$/src/Views/ModifyProduct.fxml" />
-        <option value="$PROJECT_DIR$/src/Views/MainScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/Main/InventoryProgram.java" />
-        <option value="$PROJECT_DIR$/src/Views/AddProductController.java" />
-        <option value="$PROJECT_DIR$/src/Views/MainScreenController.java" />
-        <option value="$PROJECT_DIR$/src/Views/ModifyProductController.java" />
-        <option value="$PROJECT_DIR$/src/Model/Part.java" />
-        <option value="$PROJECT_DIR$/src/Model/Inventory.java" />
-      </list>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="C482_PA" type="cbb8eebc:String" user="C482_PA" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="C482_PA" type="cbb8eebc:String" user="C482_PA" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="C482_PA" type="cbb8eebc:String" user="C482_PA" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="Main" type="cbb8eebc:String" user="Main" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="C482_PA" type="cbb8eebc:String" user="C482_PA" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="Model" type="cbb8eebc:String" user="Model" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="C482_PA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C482_PA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C482_PA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C482_PA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C482_PA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C482_PA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C482_PA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C482_PA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="C482_PA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C482_PA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="View_Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1Uf56jr5vA78vtYHTHPkgQ7h2Yk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="c482_pa" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="InventoryProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.InventoryProgram">
+    <configuration name="GetPatientSettings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main.InventoryProgram" />
+      <option name="MAIN_CLASS_NAME" value="Main.GetPatientSettings" />
       <module name="C482_PA" />
+      <shortenClasspath name="CLASSPATH_FILE" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -283,63 +65,95 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HmacSha1Signature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main.HmacSha1Signature" />
+      <module name="C482_PA" />
       <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main.InventoryProgram" />
+      <module name="C482_PA" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+    <configuration default="true" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/dist/C482_PA.jar" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <module name="C482_PA" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.InventoryProgram" />
+        <item itemvalue="Application.HmacSha1Signature" />
+        <item itemvalue="Application.GetPatientSettings" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -363,38 +177,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.20132856" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.07460398" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18283582" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.15125191" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907513" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7823383" visible="true" weight="0.17723343" />
-      <window_info id="Learn" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.5003808" side_tool="true" weight="0.08279221" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995912" />
-      <window_info id="Favorites" order="2" sideWeight="0.2176617" side_tool="true" visible="true" weight="0.17723343" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
-  </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
       <list>
@@ -405,312 +187,60 @@
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Views/AddPartController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyProductController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/InHouse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/OutSourced.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/MainScreenController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddPartController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddProductController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/InHouse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/OutSourced.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/MainScreenController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddPartController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/InHouse.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/OutSourced.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyPart.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyProduct.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/MainScreenController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/web-files/dtjava.js" />
-    <entry file="file://$PROJECT_DIR$/src/Model/OutSourced.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/C482_PA.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/AlertMessage.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/javafx-src.zip!/javafx/collections/ObservableList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyProduct.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyPart.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyProductController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/ModifyPartController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddPartController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddProductController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Model/InHouse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/AddProduct.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/AddPart.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Part.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/MainScreen.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/Views/MainScreenController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main/InventoryProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="47" selection-end-column="9" />
-          <folding>
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2787#2788#0" expanded="true" />
-            <element signature="e#2831#2832#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>C482_PA</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="463" y="-1409" width="1043" height="772" key="#Project_Structure" timestamp="1577545627798">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state x="463" y="-1409" width="1043" height="772" key="#Project_Structure/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1577545627798" />
+    <state width="3737" height="788" key="GridCell.Tab.0.bottom" timestamp="1579193836498">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.0.bottom/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836498" />
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1578948524010" />
+    <state width="3737" height="788" key="GridCell.Tab.0.center" timestamp="1579193836497">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.0.center/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836497" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1578948524009" />
+    <state width="3737" height="788" key="GridCell.Tab.0.left" timestamp="1579193836497">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.0.left/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836497" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1578948524009" />
+    <state width="3737" height="788" key="GridCell.Tab.0.right" timestamp="1579193836498">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.0.right/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836498" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1578948524009" />
+    <state width="3737" height="788" key="GridCell.Tab.1.bottom" timestamp="1579193836500">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.1.bottom/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836500" />
+    <state width="3737" height="788" key="GridCell.Tab.1.center" timestamp="1579193836499">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.1.center/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836499" />
+    <state width="3737" height="788" key="GridCell.Tab.1.left" timestamp="1579193836499">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.1.left/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836499" />
+    <state width="3737" height="788" key="GridCell.Tab.1.right" timestamp="1579193836500">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state width="3737" height="788" key="GridCell.Tab.1.right/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579193836500" />
+    <state x="414" y="-1436" key="SettingsEditor" timestamp="1579191238511">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state x="414" y="-1436" key="SettingsEditor/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579191238511" />
+    <state x="664" y="328" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1578935675306" />
+    <state x="504" y="-1242" key="com.intellij.ide.util.TipDialog" timestamp="1579190972740">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state x="504" y="-1242" key="com.intellij.ide.util.TipDialog/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1579190972740" />
+    <state x="704" y="453" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1578935656840" />
+    <state x="557" y="-1436" width="639" height="714" key="find.popup" timestamp="1578442856261">
+      <screen x="-1104" y="-2137" width="3840" height="2137" />
+    </state>
+    <state x="557" y="-1436" width="639" height="714" key="find.popup/-1104.-2137.3840.2137/0.23.1680.1027@-1104.-2137.3840.2137" timestamp="1578442856261" />
   </component>
 </project>

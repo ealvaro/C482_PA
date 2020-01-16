@@ -30,12 +30,10 @@ public class Inventory {
         for (int i = 0; i < allProducts.size(); i++) {
             if (allProducts.get(i).getProductID() == productToRemove) {
                 allProducts.remove(i);
-                break;
-            } else {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     public Product lookUpProduct(int productToSearch) {
@@ -69,13 +67,10 @@ public class Inventory {
         for (int i = 0; i < allParts.size(); i++) {
             if (allParts.get(i).getPartID() == partToDelete.getPartID()) {
                 allParts.remove(i);
-                break;
-            } else {
-                return false;
+                return true;
             }
         }
-
-        return true;
+        return false;
     }
 
     public Part lookUpPart(int partToLookUp) {
@@ -88,7 +83,6 @@ public class Inventory {
 
         }
         return null;
-
     }
 
     public void updatePart(Part partToUpdate) {
