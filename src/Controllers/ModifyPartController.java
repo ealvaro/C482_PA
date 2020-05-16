@@ -11,7 +11,6 @@ import Model.InHouse;
 import Model.Inventory;
 import Model.OutSourced;
 import Model.Part;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -65,6 +64,9 @@ public class ModifyPartController implements Initializable {
         this.part = part;
     }
 
+//    public void setSelectPart(Part sel){
+//        this.part = sel;
+//    }
     /**
      * Initializes the controller class.
      */
@@ -229,7 +231,7 @@ public class ModifyPartController implements Initializable {
 
     }
 
-    private void mainScreen(Event event) {
+    private void mainScreen(MouseEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/MainScreen.fxml"));
             MainScreenController controller = new MainScreenController(inv);
@@ -253,7 +255,7 @@ public class ModifyPartController implements Initializable {
                 AlertMessage.errorPart(1, field);
                 return true;
             }
-            if (field == price && Double.parseDouble(field.getText().trim()) < 0) {
+            if (field == price && Double.parseDouble(field.getText().trim()) <= 0.0) {
                 AlertMessage.errorPart(5, field);
                 error = true;
             }

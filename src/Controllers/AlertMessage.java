@@ -40,7 +40,7 @@ public class AlertMessage {
                 break;
             }
             case 5: {
-                alert.setContentText("Value cannot be negative!!");
+                alert.setContentText("Value cannot be negative or zero!!");
                 break;
             }
             case 6: {

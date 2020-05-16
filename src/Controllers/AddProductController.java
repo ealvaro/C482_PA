@@ -125,14 +125,10 @@ public class AddProductController implements Initializable {
 
     @FXML
     private void searchForPart(MouseEvent event) {
-        if (search.getText() != null && search.getText().trim().length() != 0) {
-            partsInventorySearch.clear();
-            for (Part p : inv.getAllParts()) {
-                if (p.getName().contains(search.getText().trim())) {
-                    partsInventorySearch.add(p);
-                }
-            }
-            partSearchTable.setItems(partsInventorySearch);
+        if (!search.getText().trim().isEmpty()) {
+            partsInventory.clear();
+            partSearchTable.setItems(inv.lookUpPart(search.getText().trim()));
+            partSearchTable.refresh();
         }
     }
 
@@ -342,6 +338,9 @@ public class AddProductController implements Initializable {
                 protected void updateItem(Double item, boolean empty) {
                     if (!empty) {
                         setText("$" + String.format("%10.2f", item));
+                    }
+                    else{
+                        setText("");
                     }
                 }
             };

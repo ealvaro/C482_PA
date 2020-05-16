@@ -71,7 +71,8 @@ public class InventoryProgram extends Application {
         prod3.addAssociatedPart(b);
         prod3.addAssociatedPart(q);
         inv.addProduct(prod3);
-        inv.addProduct(new Product(400, "Product 4", 29.99, 20, 5, 100));
+        Product prod4 = new Product(400, "Product 4", 29.99, 20, 5, 100);
+        inv.addProduct(prod4);
         inv.addProduct(new Product(500, "Product 5", 29.99, 9, 5, 100));
 
     }

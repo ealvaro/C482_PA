@@ -5,8 +5,6 @@
  */
 package Controllers;
 
-import Controllers.AddProductController;
-import Controllers.AddPartController;
 import Model.Inventory;
 import Model.Part;
 import Model.Product;
@@ -30,7 +28,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.scene.control.TableCell;
@@ -104,20 +101,20 @@ public class MainScreenController implements Initializable {
         Platform.exit();
     }
 
+    /*
+    This is the new way of doing the search. It uses the Inventory lookupPart(partName) method.
+    */
     @FXML
     private void searchForPart(MouseEvent event) {
         if (!partSearchBox.getText().trim().isEmpty()) {
-            partsInventorySearch.clear();
-            for (Part p : inv.getAllParts()) {
-                if (p.getName().contains(partSearchBox.getText().trim())) {
-                    partsInventorySearch.add(p);
-                }
-            }
-            partsTable.setItems(partsInventorySearch);
+            partsTable.setItems(inv.lookUpPart(partSearchBox.getText().trim()));
             partsTable.refresh();
         }
     }
 
+    /*
+    This is the old way of doing the search.
+    */
     @FXML
     private void searchForProduct(MouseEvent event
     ) {
@@ -194,6 +191,8 @@ public class MainScreenController implements Initializable {
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
+//                ModifyPartController c  = (ModifyPartController)loader.getController();
+//                c.setSelectPart(selected);
             }
         } catch (IOException e) {
 
@@ -382,6 +381,9 @@ public class MainScreenController implements Initializable {
                 protected void updateItem(Double item, boolean empty) {
                     if (!empty) {
                         setText("$" + String.format("%10.2f", item));
+                    }
+                    else{
+                        setText("");
                     }
                 }
             };

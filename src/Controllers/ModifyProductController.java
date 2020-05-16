@@ -41,7 +41,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
  *
  * @author Alvaro Escobar
  */
-public class ModifyProductController implements Initializable {
+    public class ModifyProductController implements Initializable {
 
     Inventory inv;
     Product product;
@@ -338,6 +338,9 @@ public class ModifyProductController implements Initializable {
                 protected void updateItem(Double item, boolean empty) {
                     if (!empty) {
                         setText("$" + String.format("%10.2f", item));
+                    }
+                    else{
+                        setText("");
                     }
                 }
             };

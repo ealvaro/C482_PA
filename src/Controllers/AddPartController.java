@@ -96,7 +96,7 @@ public class AddPartController implements Initializable {
         if (inv.partListSize() == 1000) {
             AlertMessage.errorPart(3, null);
         } else {
-            match = generateNum(num);
+            match = verifyIfTaken(num);
 
             if (match == false) {
                 id.setText(num.toString());
@@ -106,7 +106,7 @@ public class AddPartController implements Initializable {
         }
     }
 
-    private boolean generateNum(Integer num) {
+    private boolean verifyIfTaken(Integer num) {
         Part match = inv.lookUpPart(num);
         return match != null;
     }
@@ -183,7 +183,7 @@ public class AddPartController implements Initializable {
                 return;
 
             } else if (inHouseRadio.isSelected() && !company.getText().trim().matches("[0-9]*")) {
-                AlertMessage.errorPart(3, company);
+                AlertMessage.errorPart(9, company);
                 return;
             } else if (inHouseRadio.isSelected()) {
                 addInHouse();

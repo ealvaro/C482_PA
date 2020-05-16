@@ -6,6 +6,8 @@
 package Model;
 
 import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 /**
  * @author Alvaro Escobar
@@ -47,6 +49,10 @@ public class Inventory {
         return null;
     }
 
+    public ObservableList<Part> lookUpProduct(String productNameToLookUp) {
+        return null;
+    }
+    
     public void updateProduct(Product product) {
         for (int i = 0; i < allProducts.size(); i++) {
             if (allProducts.get(i).getProductID() == product.getProductID()) {
@@ -81,6 +87,19 @@ public class Inventory {
                 }
             }
 
+        }
+        return null;
+    }
+
+    public ObservableList<Part> lookUpPart(String partNameToLookUp) {
+        if (!allParts.isEmpty()) {
+            ObservableList searchPartsList = FXCollections.observableArrayList();
+             for (Part p : getAllParts()) {
+                if (p.getName().contains(partNameToLookUp)) {
+                    searchPartsList.add(p);
+                }
+            }
+             return searchPartsList;
         }
         return null;
     }
