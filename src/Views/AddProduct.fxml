@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="480.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/9.0.0.0">
+            prefHeight="480.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/8.0.171">
     <children>
         <AnchorPane layoutX="13.0" layoutY="13.0" prefHeight="455.0" prefWidth="923.0"
                     style="-fx-border-color: gray; -fx-border-radius: 10;">
