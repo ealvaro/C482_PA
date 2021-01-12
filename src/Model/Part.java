@@ -17,6 +17,15 @@ public abstract class Part {
     protected int min;
     protected int max;
 
+    public Part(int partID, String partName, double partPrice, int partInStock, int min, int max) {
+        this.partID = partID;
+        this.partName = partName;
+        this.partPrice = partPrice;
+        this.partInStock = partInStock;
+        this.min = min;
+        this.max = max;
+    }
+
     public String getName() {
         return this.partName;
     }

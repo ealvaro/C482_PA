@@ -36,6 +36,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 /**
  * FXML Controller class
+ * This is the main class where all the parts and products show up.
  *
  * @author Alvaro Escobar
  */
@@ -43,8 +44,10 @@ public class MainScreenController implements Initializable {
 
     Inventory inv;
 
-    @FXML
-    private TextField partSearchBox;
+    /**
+     * This is the box where the search String will be input.
+     */
+    @FXML private TextField partSearchBox;
     @FXML
     private TextField productSearchBox;
     @FXML
