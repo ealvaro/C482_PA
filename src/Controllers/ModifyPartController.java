@@ -83,8 +83,8 @@ public class ModifyPartController implements Initializable {
             inHouseRadio.setSelected(true);
             companyLabel.setText("Machine ID");
             this.name.setText(part1.getName());
-            this.id.setText((Integer.toString(part1.getPartID())));
-            this.count.setText((Integer.toString(part1.getInStock())));
+            this.id.setText((Integer.toString(part1.getId())));
+            this.count.setText((Integer.toString(part1.getStock())));
             this.price.setText((Double.toString(part1.getPrice())));
             this.min.setText((Integer.toString(part1.getMin())));
             this.max.setText((Integer.toString(part1.getMax())));
@@ -98,8 +98,8 @@ public class ModifyPartController implements Initializable {
             outSourcedRadio.setSelected(true);
             companyLabel.setText("Company Name");
             this.name.setText(part2.getName());
-            this.id.setText((Integer.toString(part2.getPartID())));
-            this.count.setText((Integer.toString(part2.getInStock())));
+            this.id.setText((Integer.toString(part2.getId())));
+            this.count.setText((Integer.toString(part2.getStock())));
             this.price.setText((Double.toString(part2.getPrice())));
             this.min.setText((Integer.toString(part2.getMin())));
             this.max.setText((Integer.toString(part2.getMax())));

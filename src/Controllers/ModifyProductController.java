@@ -122,7 +122,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
         if (removePart != null) {
             boolean remove = confirmationWindow(removePart.getName());
             if (remove) {
-                deleted = product.removeAssociatedPart(removePart.getPartID());
+                deleted = product.removeAssociatedPart(removePart.getId());
                 assocPartList.remove(removePart);
                 assocPartsTable.refresh();
             }
@@ -145,9 +145,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
         if (addPart == null) {
             return;
         } else {
-            int id = addPart.getPartID();
+            int id = addPart.getId();
             for (int i = 0; i < assocPartList.size(); i++) {
-                if (assocPartList.get(i).getPartID() == id) {
+                if (assocPartList.get(i).getId() == id) {
                     AlertMessage.errorProduct(2, null);
                     repeatedItem = true;
                 }

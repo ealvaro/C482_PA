@@ -13,10 +13,11 @@ public class OutSourced extends Part {
     private String companyName;
 
     public OutSourced(int partID, String name, double price, int numInStock, int min, int max, String company) {
-        setPartID(partID);
+
+        setId(partID);
         setName(name);
         setPrice(price);
-        setInStock(numInStock);
+        setStock(numInStock);
         setMin(min);
         setMax(max);
         setCompanyName(company);

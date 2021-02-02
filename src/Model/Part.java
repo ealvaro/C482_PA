@@ -1,76 +1,114 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
+/**
+* Supplied class Part.java
+ */
 
 /**
+ *
  * @author Alvaro Escobar
  */
 public abstract class Part {
+    private int id;
+    private String name;
+    private double price;
+    private int stock;
+    private int min;
+    private int max;
 
-    protected int partID;
-    protected String partName;
-    protected double partPrice = 0.0;
-    protected int partInStock;
-    protected int min;
-    protected int max;
+    public Part() {
+    }
 
-    public Part(int partID, String partName, double partPrice, int partInStock, int min, int max) {
-        this.partID = partID;
-        this.partName = partName;
-        this.partPrice = partPrice;
-        this.partInStock = partInStock;
+    public Part(int id, String name, double price, int stock, int min, int max) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
         this.min = min;
         this.max = max;
     }
 
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the name
+     */
     public String getName() {
-        return this.partName;
+        return name;
     }
 
+    /**
+     * @param name the name to set
+     */
     public void setName(String name) {
-        this.partName = name;
+        this.name = name;
     }
 
+    /**
+     * @return the price
+     */
     public double getPrice() {
-        return partPrice;
+        return price;
     }
 
+    /**
+     * @param price the price to set
+     */
     public void setPrice(double price) {
-        this.partPrice = price;
+        this.price = price;
     }
 
-    public int getInStock() {
-        return this.partInStock;
+    /**
+     * @return the stock
+     */
+    public int getStock() {
+        return stock;
     }
 
-    public void setInStock(int quantity) {
-        this.partInStock = quantity;
+    /**
+     * @param stock the stock to set
+     */
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 
+    /**
+     * @return the min
+     */
     public int getMin() {
-        return this.min;
+        return min;
     }
 
+    /**
+     * @param min the min to set
+     */
     public void setMin(int min) {
         this.min = min;
     }
 
+    /**
+     * @return the max
+     */
     public int getMax() {
-        return this.max;
+        return max;
     }
 
+    /**
+     * @param max the max to set
+     */
     public void setMax(int max) {
         this.max = max;
     }
 
-    public int getPartID() {
-        return this.partID;
-    }
-
-    public void setPartID(int partID) {
-        this.partID = partID;
-    }
 }

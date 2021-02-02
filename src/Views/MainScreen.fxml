@@ -48,7 +48,7 @@
                     <columns>
                         <TableColumn fx:id="partIDColumn" prefWidth="93.0" text="Part ID">
                             <cellValueFactory>
-                                <PropertyValueFactory property="partID" />
+                                <PropertyValueFactory property="Id" />
                             </cellValueFactory>
                         </TableColumn>
                         <TableColumn fx:id="partNameColumn" prefWidth="118.0" text="Part Name">
@@ -58,7 +58,7 @@
                         </TableColumn>
                         <TableColumn fx:id="partCountColumn" prefWidth="106.0" style="text-align: justify;" text="Inv Count">
                             <cellValueFactory>
-                                <PropertyValueFactory property="InStock" />
+                                <PropertyValueFactory property="Stock" />
                             </cellValueFactory>
                         </TableColumn>
                     </columns>

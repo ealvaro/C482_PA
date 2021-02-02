@@ -5,7 +5,6 @@
  */
 package Model;
 
-import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -14,13 +13,8 @@ import javafx.collections.ObservableList;
  */
 public class Inventory {
 
-    private ArrayList<Product> allProducts;
-    private ArrayList<Part> allParts;
-
-    public Inventory() {
-        allProducts = new ArrayList<>();
-        allParts = new ArrayList<>();
-    }
+    private ObservableList<Product> allProducts = FXCollections.observableArrayList();
+    private ObservableList<Part> allParts = FXCollections.observableArrayList();
 
     public void addProduct(Product productToAdd) {
         if (productToAdd != null) {
@@ -71,7 +65,7 @@ public class Inventory {
 
     public boolean deletePart(Part partToDelete) {
         for (int i = 0; i < allParts.size(); i++) {
-            if (allParts.get(i).getPartID() == partToDelete.getPartID()) {
+            if (allParts.get(i).getId() == partToDelete.getId()) {
                 allParts.remove(i);
                 return true;
             }
@@ -82,7 +76,7 @@ public class Inventory {
     public Part lookUpPart(int partToLookUp) {
         if (!allParts.isEmpty()) {
             for (int i = 0; i < allParts.size(); i++) {
-                if (allParts.get(i).getPartID() == partToLookUp) {
+                if (allParts.get(i).getId() == partToLookUp) {
                     return allParts.get(i);
                 }
             }
@@ -106,7 +100,7 @@ public class Inventory {
 
     public void updatePart(Part partToUpdate) {
         for (int i = 0; i < allParts.size(); i++) {
-            if (allParts.get(i).getPartID() == partToUpdate.partID) {
+            if (allParts.get(i).getId() == partToUpdate.getId()) {
                 allParts.set(i, partToUpdate);
                 break;
             }
@@ -114,11 +108,11 @@ public class Inventory {
         return;
     }
 
-    public ArrayList<Product> getAllProducts() {
+    public ObservableList<Product> getAllProducts() {
         return allProducts;
     }
 
-    public ArrayList<Part> getAllParts() {
+    public ObservableList<Part> getAllParts() {
         return allParts;
     }
 

@@ -14,10 +14,10 @@ public class InHouse extends Part {
 
     public InHouse(int partID, String name, double price, int numInStock, int min, int max, int machID) {
 
-        setPartID(partID);
+        setId(partID);
         setName(name);
         setPrice(price);
-        setInStock(numInStock);
+        setStock(numInStock);
         setMin(min);
         setMax(max);
         setMachineID(machID);

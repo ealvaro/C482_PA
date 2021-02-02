@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
+
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -45,13 +46,23 @@ public class MainScreenController implements Initializable {
     Inventory inv;
 
     /**
-     * This is the box where the search String will be input.
+     * This is the box where the part search String will be input.
      */
-    @FXML private TextField partSearchBox;
+    @FXML
+    private TextField partSearchBox;
+    /**
+     * This is the box where the product search String will be input.
+     */
     @FXML
     private TextField productSearchBox;
+    /**
+     * This is the table where ALL the parts in the Inventory will be shown.
+     */
     @FXML
     private TableView<Part> partsTable;
+    /**
+     * This is the table where ALL the products in the Inventory will be shown.
+     */
     @FXML
     private TableView<Product> productsTable;
     private ObservableList<Part> partInventory = FXCollections.observableArrayList();
@@ -72,16 +83,22 @@ public class MainScreenController implements Initializable {
         generateProductsTable();
     }
 
+    /**
+     * Generates Price column in the table and assigns ALL the parts in the Inventory.
+     */
     private void generatePartsTable() {
         partInventory.setAll(inv.getAllParts());
-        
+
         TableColumn<Part, Double> costCol = formatPrice();
         partsTable.getColumns().addAll(costCol);
-        
+
         partsTable.setItems(partInventory);
         partsTable.refresh();
     }
 
+    /**
+     * Generates Price column in the table and assigns ALL the products in the Inventory.
+     */
     private void generateProductsTable() {
         productInventory.setAll(inv.getAllProducts());
 
@@ -104,7 +121,7 @@ public class MainScreenController implements Initializable {
         Platform.exit();
     }
 
-    /*
+    /**
     This is the new way of doing the search. It uses the Inventory lookupPart(partName) method.
     */
     @FXML
@@ -115,8 +132,8 @@ public class MainScreenController implements Initializable {
         }
     }
 
-    /*
-    This is the old way of doing the search.
+    /**
+    This is the old way of doing the search. It doesn't use the Inventory lookupProduct(partName) method.
     */
     @FXML
     private void searchForProduct(MouseEvent event
@@ -133,6 +150,9 @@ public class MainScreenController implements Initializable {
         }
     }
 
+    /**
+     * Clears either one of the search boxes and shows ALL the parts/products in the Inventory.
+     */
     @FXML
     void clearText(MouseEvent event
     ) {
@@ -151,6 +171,9 @@ public class MainScreenController implements Initializable {
         }
     }
 
+    /**
+     * Go to the Add Part Screen
+     */
     @FXML
     private void addPart(MouseEvent event
     ) {
@@ -171,6 +194,9 @@ public class MainScreenController implements Initializable {
         }
     }
 
+    /**
+     * Go to the Modify Part Screen
+     */
     @FXML
     private void modifyPart(MouseEvent event
     ) {
@@ -238,23 +264,14 @@ public class MainScreenController implements Initializable {
             errorWindow(2);
             return;
         }
-        if (removeProduct.getPartsListSize() > 0) {
+        if (removeProduct.getPartsListSize() == 0) {
             boolean confirm = confirmDelete(removeProduct.getName());
             if (!confirm) {
                 return;
             }
         } else {
-            if (removeProduct != null) {
-                infoWindow(1, removeProduct.getName());
-                deleted = true;
-                if (deleted) {
-                    return;
-
-                } else {
-                    infoWindow(2, "");
-                }
-
-            }
+            infoWindow(removeProduct.getName());
+            return;
         }
         inv.removeProduct(removeProduct.getProductID());
         productInventory.remove(removeProduct);
@@ -262,6 +279,9 @@ public class MainScreenController implements Initializable {
         productsTable.refresh();
     }
 
+    /**
+     * Go to the Modify Product Screen
+     */
     @FXML
     private void modifyProduct(MouseEvent event
     ) {
@@ -347,7 +367,7 @@ public class MainScreenController implements Initializable {
     private boolean confirmDelete(String name) {
         Alert alert = new Alert(AlertType.CONFIRMATION);
         alert.setTitle("Delete product");
-        alert.setHeaderText("Are you sure you want to delete: " + name + " this product still has parts assigned to it!");
+        alert.setHeaderText("Are you sure you want to delete: " + name );
         alert.setContentText("Click ok to confirm");
 
         Optional<ButtonType> result = alert.showAndWait();
@@ -358,20 +378,12 @@ public class MainScreenController implements Initializable {
         }
     }
 
-    private void infoWindow(int code, String name) {
-        if (code != 2) {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Confirmed");
-            alert.setHeaderText(null);
-            alert.setContentText(name + " has been deleted!");
-
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(AlertType.INFORMATION);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText("There was an error!");
-        }
+    private void infoWindow(String name) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Confirmed");
+        alert.setHeaderText(null);
+        alert.setContentText(name + " still has parts assigned to it and has NOT been deleted!");
+        alert.showAndWait();
     }
 
     private <T> TableColumn<T, Double> formatPrice() {
@@ -384,8 +396,7 @@ public class MainScreenController implements Initializable {
                 protected void updateItem(Double item, boolean empty) {
                     if (!empty) {
                         setText("$" + String.format("%10.2f", item));
-                    }
-                    else{
+                    } else {
                         setText("");
                     }
                 }

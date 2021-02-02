@@ -60,7 +60,7 @@
                     <columns>
                         <TableColumn fx:id="partIDColumn" minWidth="-Infinity" prefWidth="104.0" text="Part ID">
                             <cellValueFactory>
-                                <PropertyValueFactory property="PartID" />
+                                <PropertyValueFactory property="Id" />
                             </cellValueFactory>
                         </TableColumn>
                         <TableColumn fx:id="partNameColumn" prefWidth="112.0" text="Part Name">
@@ -70,7 +70,7 @@
                         </TableColumn>
                         <TableColumn fx:id="partCountColumn" prefWidth="98.0" text="Inv Count">
                             <cellValueFactory>
-                                <PropertyValueFactory property="InStock" />
+                                <PropertyValueFactory property="Stock" />
                             </cellValueFactory>
                         </TableColumn>
                     </columns>
@@ -90,7 +90,7 @@
                     <columns>
                         <TableColumn fx:id="assocPartIDColumn" minWidth="-Infinity" prefWidth="104.0" text="Part ID">
                             <cellValueFactory>
-                                <PropertyValueFactory property="PartID" />
+                                <PropertyValueFactory property="Id" />
                             </cellValueFactory>
                         </TableColumn>
                         <TableColumn fx:id="assocPartNameColumn" prefWidth="112.0" text="Part Name">
@@ -100,7 +100,7 @@
                         </TableColumn>
                         <TableColumn fx:id="assocPartCountColumn" prefWidth="98.0" text="Inv Count">
                             <cellValueFactory>
-                                <PropertyValueFactory property="InStock" />
+                                <PropertyValueFactory property="Stock" />
                             </cellValueFactory>
                         </TableColumn>
                     </columns>

@@ -20,80 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff0d54a-5626-4ad1-8fdc-c8aa55338d16" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/nbproject/configs/javafx.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inventory.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/AddPartController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/AddPartController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/AddProductController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/AddProductController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/AlertMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/AlertMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/MainScreenController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/MainScreenController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/ModifyPartController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/ModifyPartController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/ModifyProductController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/ModifyProductController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/AddPartController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/AddPartController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/AddProductController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/AddProductController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/AlertMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/AlertMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/MainScreenController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/MainScreenController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/ModifyPartController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/ModifyPartController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/class-use/ModifyProductController.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/class-use/ModifyProductController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Controllers/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Controllers/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Main/InventoryProgram.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Main/InventoryProgram.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Main/class-use/InventoryProgram.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Main/class-use/InventoryProgram.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Main/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Main/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Main/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Main/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Main/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Main/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/InHouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/InHouse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/Inventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/Inventory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/OutSourced.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/OutSourced.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/Part.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/Part.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/Product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/class-use/InHouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/class-use/InHouse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/class-use/Inventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/class-use/Inventory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/class-use/OutSourced.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/class-use/OutSourced.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/class-use/Part.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/class-use/Part.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/class-use/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/class-use/Product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Model/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/jquery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/jquery/jquery-3.5.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/jquery/jquery-migrate-3.0.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/docs/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AddProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/MainScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/InventoryProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/InventoryProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ModifyPartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ModifyPartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/ModifyProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/ModifyProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/InHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/InHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/OutSourced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/OutSourced.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/MainScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/ModifyProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/ModifyProduct.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/C482" />
+    <property name="last_opened_file_path" value="/opt/scenebuilder/bin/SceneBuilder" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -251,56 +190,50 @@
       <screen x="0" y="1475" width="1920" height="1053" />
     </state>
     <state x="409" y="1608" width="1264" height="838" key="#Project_Structure/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1609364750209" />
-    <state x="1087" y="506" width="1839" height="982" key="#Project_Structure/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1602027114822" />
-    <state x="427" y="1547" width="1202" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609366981769">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state x="669" y="1550" width="1202" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611779091403">
+      <screen x="0" y="1050" width="3840" height="2160" />
     </state>
     <state x="427" y="1547" width="1202" height="546" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1609366981769" />
-    <state x="1061" y="294" width="2403" height="921" key="#com.intellij.execution.impl.EditConfigurationsDialog/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1602027205161" />
-    <state x="768" y="1719" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1610469040936">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state x="669" y="1550" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.2760.1920.1080/0.1050.3840.2160/5760.0.2160.3840@0.1050.3840.2160" timestamp="1611779091403" />
+    <state x="1536" y="1737" width="374" height="423" key="#com.intellij.ide.util.MemberChooser" timestamp="1612289891564">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state x="768" y="1719" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1610469040936" />
-    <state x="1465" y="799" width="853" height="490" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1602027112371">
-      <screen x="0" y="0" width="3840" height="2160" />
-    </state>
-    <state x="1465" y="799" width="853" height="490" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1602027112371" />
+    <state x="1536" y="1737" width="374" height="423" key="#com.intellij.ide.util.MemberChooser/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612289891564" />
     <state x="558" y="1695" width="744" height="577" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609594425643">
       <screen x="0" y="1475" width="1920" height="1053" />
     </state>
     <state x="558" y="1695" width="744" height="577" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1609594425643" />
-    <state x="948" y="1746" width="723" height="689" key="FileChooserDialogImpl" timestamp="1609789140896">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state x="1566" y="1228" width="1776" height="1792" key="FileChooserDialogImpl" timestamp="1611762962845">
+      <screen x="0" y="1050" width="3840" height="2160" />
     </state>
-    <state x="948" y="1746" width="723" height="689" key="FileChooserDialogImpl/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1609789140896" />
-    <state width="1874" height="362" key="GridCell.Tab.0.bottom" timestamp="1607735976531">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state x="948" y="1746" width="723" height="689" key="FileChooserDialogImpl/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1610477209645" />
+    <state x="1566" y="1228" width="1776" height="1792" key="FileChooserDialogImpl/3840.2760.1920.1080/0.1050.3840.2160/5760.0.2160.3840@0.1050.3840.2160" timestamp="1611762962845" />
+    <state width="3794" height="154" key="GridCell.Tab.0.bottom" timestamp="1612293330625">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state width="1874" height="362" key="GridCell.Tab.0.bottom/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1607735976531" />
-    <state width="3578" height="111" key="GridCell.Tab.0.bottom/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1601931112526" />
-    <state width="1874" height="362" key="GridCell.Tab.0.center" timestamp="1607735976531">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state width="3794" height="154" key="GridCell.Tab.0.bottom/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612293330625" />
+    <state width="3794" height="154" key="GridCell.Tab.0.center" timestamp="1612293330625">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state width="1874" height="362" key="GridCell.Tab.0.center/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1607735976531" />
-    <state width="3578" height="111" key="GridCell.Tab.0.center/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1601931112526" />
-    <state width="1874" height="362" key="GridCell.Tab.0.left" timestamp="1607735976530">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state width="3794" height="154" key="GridCell.Tab.0.center/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612293330625" />
+    <state width="3794" height="154" key="GridCell.Tab.0.left" timestamp="1612293330625">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state width="1874" height="362" key="GridCell.Tab.0.left/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1607735976530" />
-    <state width="3578" height="111" key="GridCell.Tab.0.left/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1601931112525" />
-    <state width="1874" height="362" key="GridCell.Tab.0.right" timestamp="1607735976531">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state width="3794" height="154" key="GridCell.Tab.0.left/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612293330625" />
+    <state width="3794" height="154" key="GridCell.Tab.0.right" timestamp="1612293330625">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state width="1874" height="362" key="GridCell.Tab.0.right/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1607735976531" />
-    <state width="3578" height="111" key="GridCell.Tab.0.right/1042.2160.1920.1080/0.0.3840.2160@0.0.3840.2160" timestamp="1601931112526" />
-    <state x="545" y="1748" width="923" height="507" key="NewModule_or_Project.wizard" timestamp="1602971905329">
-      <screen x="0" y="1475" width="1920" height="1053" />
-    </state>
-    <state x="545" y="1748" width="923" height="507" key="NewModule_or_Project.wizard/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1602971905329" />
-    <state x="799" y="1810" width="588" height="526" key="find.popup" timestamp="1605650630566">
-      <screen x="0" y="1475" width="1920" height="1053" />
+    <state width="3794" height="154" key="GridCell.Tab.0.right/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612293330625" />
+    <state x="1599" y="776" width="641" height="606" key="find.popup" timestamp="1612288810151">
+      <screen x="0" y="1737" width="3840" height="423" />
     </state>
     <state x="799" y="1810" width="588" height="526" key="find.popup/0.1475.1920.1053/1920.0.2160.3840@0.1475.1920.1053" timestamp="1605650630566" />
+    <state x="1599" y="776" width="641" height="606" key="find.popup/3840.1710.1920.1080/0.1737.3840.423/5760.130.2160.3840@0.1737.3840.423" timestamp="1612288810151" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

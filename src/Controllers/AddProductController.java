@@ -138,9 +138,9 @@ public class AddProductController implements Initializable {
         boolean repeatedItem = false;
 
         if (addPart != null) {
-            int id = addPart.getPartID();
+            int id = addPart.getId();
             for (int i = 0; i < assocPartList.size(); i++) {
-                if (assocPartList.get(i).getPartID() == id) {
+                if (assocPartList.get(i).getId() == id) {
                     AlertMessage.errorProduct(2, null);
                     repeatedItem = true;
                 }
